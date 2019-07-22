@@ -23,9 +23,9 @@ var Articleschema = new Schema({
 summary:{
   type: String,
 },
-  comment: [{
-    type: schema.Types.objectId,
-ref: "comment"  }],
+//   comment: [{
+//     // type: schema.Types.objectId,
+// ref: "comment"  }],
   
 });
 

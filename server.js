@@ -70,22 +70,14 @@ entry.save(function(err, doc) {
     console.log(doc);
   }
 });
-// closing entry.save
 
 });
-//closing div.listEntry
 
 
 });
-// closing request
-
-// res.redirect("/");
-
-
-// closing app.get
 
 //Get Articles from DB
-app.get("/stories", function(req, res) {
+app.get("/Article", function(req, res) {
 // Grab every doc in the Articles array
 Article.find({}, function(error, doc) {
 // Log any errors
@@ -100,7 +92,7 @@ res.json(doc);
 });
 
 // Grab an article by it's ObjectId
-app.get("/stories/:id", function(req, res) {
+app.get("/Article/:id", function(req, res) {
 // Using the id passed in the id parameter, prepare a query that finds the matching one in our db...
 Article.findOne({ "_id": req.params.id })
 // ..and populate all of the comments associated with it
